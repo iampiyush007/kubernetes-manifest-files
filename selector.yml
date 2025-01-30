@@ -1,0 +1,23 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: piyush
+  labels:
+    env: qa
+
+
+
+
+
+spec:
+  containers:
+    - name: my-cont
+      image: centos
+      command: ["ping", "localhost"]
+
+
+  nodeSelector:
+    machine: madmax
+
+
+    

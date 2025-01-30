@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: vel-pod-2
+  labels:
+    env: qa
+
+
+spec:
+  containers:
+    - name: test
+      image: ubuntu
+      command: ["/bin/bash", "-c", "while true; do echo 'vel-app'; done"] 

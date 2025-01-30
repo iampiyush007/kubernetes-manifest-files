@@ -1,0 +1,14 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: vel-pod
+  labels:
+    env: dev
+    class: velocity
+
+
+spec:
+  containers:
+    - name: vel-1
+      image: centos
+      command: ["ping", "localhost"]
