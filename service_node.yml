@@ -1,0 +1,17 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: velservice
+
+
+spec:
+  ports:
+    - port: 80
+      targetPort: 80
+
+
+  selector:
+   name: velocity
+
+  type: NodePort
+
